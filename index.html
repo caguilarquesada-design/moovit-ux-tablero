@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditoría UX — Moovit · Leyes UX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-kicker">Diseño UX/UI · Universidad de San Andrés</span>
+    <a class="masthead-link" href="heuristicas.html">Ver heurísticas de Nielsen →</a>
+  </div>
+  <h1 class="masthead-title">Auditoría de leyes UX<br><em>sobre Moovit</em></h1>
+  <p class="masthead-lede">
+    Relevamiento de las navegaciones principales de la app — búsqueda de líneas,
+    paradas cercanas y planificación de viaje — contra las 14 leyes UX de referencia.
+    Cada hallazgo está respaldado con una captura real de la interfaz.
+  </p>
+
+  <div class="masthead-stats">
+    <div class="stat">
+      <span class="stat-num">8</span>
+      <span class="stat-label">leyes documentadas<br>de 14</span>
+    </div>
+    <div class="stat stat-cumple">
+      <span class="stat-num">7</span>
+      <span class="stat-label">se cumplen</span>
+    </div>
+    <div class="stat stat-rompe">
+      <span class="stat-num">3</span>
+      <span class="stat-label">se rompen</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">6</span>
+      <span class="stat-label">pantallas<br>relevadas</span>
+    </div>
+  </div>
+</header>
+
+<main class="findings">
+
+  <!-- 01 — Ley de Jakob -->
+  <article class="finding" id="jakob-1">
+    <div class="finding-index">01</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-lineas.jpg" alt="Pantalla de búsqueda de líneas en Moovit, con barra de navegación inferior visible">
+      <span class="media-caption">Pantalla · Líneas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Jakob</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">"Los usuarios pasan la mayor parte del tiempo en otros sitios, y prefieren que el tuyo funcione igual que los que ya conocen."</p>
+      <p class="finding-analysis">
+        La barra de navegación inferior (Direcciones, Paradas, Líneas, Moovit+) replica
+        el patrón estándar de apps de mapas y transporte que el usuario ya conoce
+        (Google Maps, Citymapper). Al no tener que aprender una estructura nueva,
+        la navegación resulta predecible desde el primer uso.
+      </p>
+    </div>
+  </article>
+
+  <!-- 02 — Ley de Hick -->
+  <article class="finding finding-reverse" id="hick">
+    <div class="finding-index">02</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-lineas.jpg" alt="Filtros de tipo de línea: Alertas, favoritos, Todos, Colectivo, Tren">
+      <span class="media-caption">Pantalla · Líneas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Hick</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">"El tiempo que se tarda en tomar una decisión aumenta a medida que se incrementa el número de alternativas."</p>
+      <p class="finding-analysis">
+        Los filtros de tipo de línea, ubicados arriba del listado, se limitan a cinco
+        opciones bien diferenciadas (Alertas, Favoritos, Todos, Colectivo, Tren).
+        Al mantener el set de alternativas acotado, la decisión de qué filtro tocar
+        es prácticamente inmediata, sin sobrecargar al usuario.
+      </p>
+    </div>
+  </article>
+
+  <!-- 03 — Ley de Fitts -->
+  <article class="finding" id="fitts">
+    <div class="finding-index">03</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-paradas.jpg" alt="Pantalla de paradas cercanas con botones de horario y controles de mapa">
+      <span class="media-caption">Pantalla · Paradas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Fitts</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">"El tiempo necesario para alcanzar un objetivo con un movimiento rápido es función del tamaño de dicho objetivo y de la distancia que hay que recorrer hasta él."</p>
+      <p class="finding-analysis">
+        El indicador de horario ("Ahora" / "5 min") de cada línea es grande y ocupa
+        todo el borde derecho de su fila, sin requerir precisión para tocarlo.
+        En el mapa, los controles de ubicación y capas son botones circulares
+        amplios y bien separados entre sí, lo que reduce el riesgo de error al tocar.
+      </p>
+    </div>
+  </article>
+
+  <!-- 04 — Ley de Jakob (mapa) -->
+  <article class="finding finding-reverse" id="jakob-2">
+    <div class="finding-index">04</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-paradas.jpg" alt="Mapa de paradas cercanas con marcador de ubicación y controles estilo Google Maps">
+      <span class="media-caption">Pantalla · Paradas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Jakob</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">"Los usuarios esperan que las interfaces se comporten de manera predecible, similar a otras aplicaciones y sitios web que han utilizado."</p>
+      <p class="finding-analysis">
+        El mapa con marcador de posición actual, botón de geolocalización y control
+        de capas reproduce el mismo lenguaje visual de Google Maps y Apple Maps.
+        La mayoría de los usuarios ya sabe interpretarlo y operarlo sin instrucciones
+        adicionales.
+      </p>
+    </div>
+  </article>
+
+  <!-- 05 — Ley de Miller -->
+  <article class="finding" id="miller">
+    <div class="finding-index">05</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-direcciones.jpg" alt="Tarjeta de destino frecuente con trayecto fragmentado en íconos: colectivo 107, colectivo 152, caminata">
+      <span class="media-caption">Pantalla · Direcciones</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Miller</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">"Las personas solo pueden retener entre 5 y 9 elementos en su memoria de trabajo — lo que hace necesario fragmentar la información en unidades pequeñas."</p>
+      <p class="finding-analysis">
+        La tarjeta "Destino frecuente" no describe el trayecto como un párrafo de texto:
+        lo fragmenta (<em>chunking</em>) en tres unidades simples — colectivo 107,
+        colectivo 152 y el ícono de caminata — conectadas por flechas. Esto reduce
+        la carga sobre la memoria de trabajo del usuario al leer el recorrido.
+      </p>
+    </div>
+  </article>
+
+  <!-- 06 — Ley de Postel -->
+  <article class="finding finding-reverse" id="postel">
+    <div class="finding-index">06</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-busqueda-142.jpg" alt="Búsqueda de '142' devolviendo direcciones y paradas que contienen ese número">
+      <span class="media-caption">Pantalla · Búsqueda "142"</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Postel</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">"Sé flexible en lo que aceptás, estricto en lo que devolvés." Aplicado a interfaces: el sistema debe tolerar variaciones en la entrada del usuario.</p>
+      <p class="finding-analysis">
+        Al buscar "142" — un número ambiguo que podría ser una línea, una
+        altura de calle o parte del nombre de una parada — el sistema no exige
+        un formato exacto: devuelve resultados agrupados en "Lugares"
+        (direcciones que contienen 142) y "Paradas" (que incluyen 142 en su
+        nombre), interpretando la intención del usuario en vez de rechazar
+        la búsqueda.
+      </p>
+    </div>
+  </article>
+
+  <!-- 07 — Ley de Hick (segundo caso) -->
+  <article class="finding" id="hick-2">
+    <div class="finding-index">07</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-menu.jpg" alt="Menú principal con cerca de 13 opciones en una sola lista continua">
+      <span class="media-caption">Pantalla · Menú principal</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Hick</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">"El tiempo que se tarda en tomar una decisión aumenta a medida que se incrementa el número de alternativas."</p>
+      <p class="finding-analysis">
+        El menú principal presenta cerca de 13 opciones en una sola lista
+        continua (Centro de notificaciones, Mapas sin conexión, Comparte,
+        Valóranos, Configuración, Ayuda y Soporte, Consultá tu saldo SUBE,
+        etc.), separadas solo por líneas divisorias sutiles y sin categorías
+        visuales claras. Esto obliga a escanear una lista larga para
+        encontrar la opción buscada, aumentando el tiempo de decisión.
+      </p>
+    </div>
+  </article>
+
+  <!-- 08 — Efecto Von Restorff -->
+  <article class="finding finding-reverse" id="von-restorff">
+    <div class="finding-index">08</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-menu.jpg" alt="Menú con cinco etiquetas 'Nuevo' repetidas en distintos ítems">
+      <span class="media-caption">Pantalla · Menú principal</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Efecto Von Restorff</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">Los elementos que se diferencian de sus pares tienen más probabilidades de ser notados y recordados.</p>
+      <p class="finding-analysis">
+        Casi todos los ítems de la parte inferior del menú ("Consultá tu
+        saldo SUBE", "¿Encontraste un error?", "Tarifas del transporte",
+        "Consultá los paros", "Oferta especial de eSIM", "Chateá con la
+        Comunidad") llevan la misma etiqueta azul "Nuevo". Al aplicarse a
+        casi toda la lista, la etiqueta pierde su función distintiva: nada
+        se destaca realmente sobre el resto.
+      </p>
+    </div>
+  </article>
+
+  <!-- 09 — Efecto de Posición Serial -->
+  <article class="finding" id="posicion-serial">
+    <div class="finding-index">09</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-viaje.jpg" alt="Resultados de Planea un viaje con la opción de Uber ubicada primera en la lista">
+      <span class="media-caption">Pantalla · Planea un viaje</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Efecto de Posición Serial</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">Los usuarios tienden a recordar mejor el primer y el último elemento de una serie de opciones.</p>
+      <p class="finding-analysis">
+        En los resultados de "Planea un viaje", el primer lugar de la lista
+        lo ocupa un viaje pagado con Uber (18 min, botón "Pedir") — la
+        posición de mayor recordación — mientras que las alternativas de
+        transporte público, más económicas, aparecen debajo, en posiciones
+        con menor probabilidad de ser elegidas.
+      </p>
+    </div>
+  </article>
+
+  <!-- 10 — Ley de Tesler -->
+  <article class="finding finding-reverse" id="tesler">
+    <div class="finding-index">10</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-viaje.jpg" alt="Combinación de línea 107, transbordo a 152 y caminata calculada automáticamente por la app">
+      <span class="media-caption">Pantalla · Planea un viaje</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Tesler</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">Para cualquier proceso existe un nivel básico de complejidad que no se puede eliminar, solo mover de un lado a otro.</p>
+      <p class="finding-analysis">
+        Planificar un viaje combinando caminata, colectivo 107, transbordo
+        al 152 y sus horarios de salida es una tarea compleja. Moovit absorbe
+        esa complejidad calculando automáticamente las combinaciones
+        posibles, sus tiempos y costos, en vez de trasladarle al usuario la
+        tarea de planificar cada tramo por separado.
+      </p>
+    </div>
+  </article>
+
+</main>
+
+<section class="pending">
+  <h3>Leyes pendientes de relevar</h3>
+  <p>
+    Doherty · Peak-End · Estética-Usabilidad · Zeigarnik · Gradiente de Meta · Parkinson
+  </p>
+</section>
+
+<footer class="site-footer">
+  <p>Proyecto integrador — Diseño UX/UI, Universidad de San Andrés · Producto evaluado: Moovit</p>
+</footer>
+
+</body>
+</html>
