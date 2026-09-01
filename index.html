@@ -25,19 +25,19 @@
 
   <div class="masthead-stats">
     <div class="stat">
-      <span class="stat-num">5</span>
+      <span class="stat-num">8</span>
       <span class="stat-label">leyes documentadas<br>de 14</span>
     </div>
     <div class="stat stat-cumple">
-      <span class="stat-num">4</span>
+      <span class="stat-num">7</span>
       <span class="stat-label">se cumplen</span>
     </div>
     <div class="stat stat-rompe">
-      <span class="stat-num">0</span>
+      <span class="stat-num">3</span>
       <span class="stat-label">se rompen</span>
     </div>
     <div class="stat">
-      <span class="stat-num">3</span>
+      <span class="stat-num">6</span>
       <span class="stat-label">pantallas<br>relevadas</span>
     </div>
   </div>
@@ -155,13 +155,130 @@
     </div>
   </article>
 
+  <!-- 06 — Ley de Postel -->
+  <article class="finding finding-reverse" id="postel">
+    <div class="finding-index">06</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-busqueda-142.jpg" alt="Búsqueda de '142' devolviendo direcciones y paradas que contienen ese número">
+      <span class="media-caption">Pantalla · Búsqueda "142"</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Postel</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">"Sé flexible en lo que aceptás, estricto en lo que devolvés." Aplicado a interfaces: el sistema debe tolerar variaciones en la entrada del usuario.</p>
+      <p class="finding-analysis">
+        Al buscar "142" — un número ambiguo que podría ser una línea, una
+        altura de calle o parte del nombre de una parada — el sistema no exige
+        un formato exacto: devuelve resultados agrupados en "Lugares"
+        (direcciones que contienen 142) y "Paradas" (que incluyen 142 en su
+        nombre), interpretando la intención del usuario en vez de rechazar
+        la búsqueda.
+      </p>
+    </div>
+  </article>
+
+  <!-- 07 — Ley de Hick (segundo caso) -->
+  <article class="finding" id="hick-2">
+    <div class="finding-index">07</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-menu.jpg" alt="Menú principal con cerca de 13 opciones en una sola lista continua">
+      <span class="media-caption">Pantalla · Menú principal</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Hick</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">"El tiempo que se tarda en tomar una decisión aumenta a medida que se incrementa el número de alternativas."</p>
+      <p class="finding-analysis">
+        El menú principal presenta cerca de 13 opciones en una sola lista
+        continua (Centro de notificaciones, Mapas sin conexión, Comparte,
+        Valóranos, Configuración, Ayuda y Soporte, Consultá tu saldo SUBE,
+        etc.), separadas solo por líneas divisorias sutiles y sin categorías
+        visuales claras. Esto obliga a escanear una lista larga para
+        encontrar la opción buscada, aumentando el tiempo de decisión.
+      </p>
+    </div>
+  </article>
+
+  <!-- 08 — Efecto Von Restorff -->
+  <article class="finding finding-reverse" id="von-restorff">
+    <div class="finding-index">08</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-menu.jpg" alt="Menú con cinco etiquetas 'Nuevo' repetidas en distintos ítems">
+      <span class="media-caption">Pantalla · Menú principal</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Efecto Von Restorff</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">Los elementos que se diferencian de sus pares tienen más probabilidades de ser notados y recordados.</p>
+      <p class="finding-analysis">
+        Casi todos los ítems de la parte inferior del menú ("Consultá tu
+        saldo SUBE", "¿Encontraste un error?", "Tarifas del transporte",
+        "Consultá los paros", "Oferta especial de eSIM", "Chateá con la
+        Comunidad") llevan la misma etiqueta azul "Nuevo". Al aplicarse a
+        casi toda la lista, la etiqueta pierde su función distintiva: nada
+        se destaca realmente sobre el resto.
+      </p>
+    </div>
+  </article>
+
+  <!-- 09 — Efecto de Posición Serial -->
+  <article class="finding" id="posicion-serial">
+    <div class="finding-index">09</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-viaje.jpg" alt="Resultados de Planea un viaje con la opción de Uber ubicada primera en la lista">
+      <span class="media-caption">Pantalla · Planea un viaje</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Efecto de Posición Serial</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">Los usuarios tienden a recordar mejor el primer y el último elemento de una serie de opciones.</p>
+      <p class="finding-analysis">
+        En los resultados de "Planea un viaje", el primer lugar de la lista
+        lo ocupa un viaje pagado con Uber (18 min, botón "Pedir") — la
+        posición de mayor recordación — mientras que las alternativas de
+        transporte público, más económicas, aparecen debajo, en posiciones
+        con menor probabilidad de ser elegidas.
+      </p>
+    </div>
+  </article>
+
+  <!-- 10 — Ley de Tesler -->
+  <article class="finding finding-reverse" id="tesler">
+    <div class="finding-index">10</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-viaje.jpg" alt="Combinación de línea 107, transbordo a 152 y caminata calculada automáticamente por la app">
+      <span class="media-caption">Pantalla · Planea un viaje</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ley de Tesler</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">Para cualquier proceso existe un nivel básico de complejidad que no se puede eliminar, solo mover de un lado a otro.</p>
+      <p class="finding-analysis">
+        Planificar un viaje combinando caminata, colectivo 107, transbordo
+        al 152 y sus horarios de salida es una tarea compleja. Moovit absorbe
+        esa complejidad calculando automáticamente las combinaciones
+        posibles, sus tiempos y costos, en vez de trasladarle al usuario la
+        tarea de planificar cada tramo por separado.
+      </p>
+    </div>
+  </article>
+
 </main>
 
 <section class="pending">
   <h3>Leyes pendientes de relevar</h3>
   <p>
-    Postel · Doherty · Peak-End · Estética-Usabilidad · Von Restorff ·
-    Zeigarnik · Posición Serial · Gradiente de Meta · Parkinson · Tesler
+    Doherty · Peak-End · Estética-Usabilidad · Zeigarnik · Gradiente de Meta · Parkinson
   </p>
 </section>
 

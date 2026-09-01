@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auditoría UX — Moovit · Heurísticas de Nielsen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span class="masthead-kicker">Diseño UX/UI · Universidad de San Andrés</span>
+    <a class="masthead-link" href="index.html">← Ver leyes UX</a>
+  </div>
+  <h1 class="masthead-title">Heurísticas de Nielsen<br><em>sobre Moovit</em></h1>
+  <p class="masthead-lede">
+    Evaluación de usabilidad de las mismas tres pantallas — búsqueda de líneas,
+    paradas cercanas y planificación de viaje — contra las 10 heurísticas de Nielsen.
+    Cada hallazgo está respaldado con una captura real de la interfaz.
+  </p>
+
+  <div class="masthead-stats">
+    <div class="stat">
+      <span class="stat-num">10</span>
+      <span class="stat-label">heurísticas documentadas<br>de 10</span>
+    </div>
+    <div class="stat stat-cumple">
+      <span class="stat-num">9</span>
+      <span class="stat-label">se cumplen</span>
+    </div>
+    <div class="stat stat-rompe">
+      <span class="stat-num">3</span>
+      <span class="stat-label">se rompen</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">7</span>
+      <span class="stat-label">pantallas<br>relevadas</span>
+    </div>
+  </div>
+</header>
+
+<main class="findings">
+
+  <!-- 01 — Visibilidad del estado del sistema -->
+  <article class="finding" id="visibilidad">
+    <div class="finding-index">01</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-paradas.jpg" alt="Listado de paradas cercanas con horarios de próxima llegada en tiempo real">
+      <span class="media-caption">Pantalla · Paradas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Visibilidad del estado del sistema</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">El sistema debe informar a los usuarios del estado del sistema, dando una retroalimentación apropiada en un tiempo razonable.</p>
+      <p class="finding-analysis">
+        Cada línea muestra en tiempo real cuándo pasa el próximo colectivo
+        ("Ahora", "5 min") y los horarios siguientes (15, 25 min), dando al
+        usuario retroalimentación clara y actualizada del estado del sistema
+        de transporte.
+      </p>
+    </div>
+  </article>
+
+  <!-- 02 — Relación entre el sistema y el mundo real -->
+  <article class="finding finding-reverse" id="mundo-real">
+    <div class="finding-index">02</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-paradas.jpg" alt="Paradas identificadas con referencias urbanas conocidas como Club Hípico Argentino y River Plate">
+      <span class="media-caption">Pantalla · Paradas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Relación entre el sistema y el mundo real</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">El sistema debe utilizar el lenguaje de los usuarios, con metáforas, palabras o frases que le sean conocidas, en lugar de los términos que se utilizan en el sistema.</p>
+      <p class="finding-analysis">
+        Las paradas se identifican con referencias urbanas conocidas por el
+        usuario ("Club Hípico Argentino / Club Obras Sanitarias", "River Plate")
+        en vez de códigos internos, y se usa lenguaje cotidiano ("5 min
+        caminando") en lugar de una distancia en metros.
+      </p>
+    </div>
+  </article>
+
+  <!-- 03 — Control y libertad del usuario -->
+  <article class="finding" id="control-libertad">
+    <div class="finding-index">03</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-direcciones.jpg" alt="Banner promocional de Moovit+ con botón de cierre visible">
+      <span class="media-caption">Pantalla · Direcciones</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Control y libertad del usuario</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">Hay ocasiones en que los usuarios eligen funciones del sistema por error y necesitarán una "salida de emergencia".</p>
+      <p class="finding-analysis">
+        El banner promocional de Moovit+ incluye un botón "X" claramente
+        visible en la esquina para cerrarlo, dándole al usuario una salida
+        rápida si no le interesa la oferta, sin bloquear el resto de la pantalla.
+      </p>
+    </div>
+  </article>
+
+  <!-- 04 — Consistencia y estándares -->
+  <article class="finding finding-reverse" id="consistencia">
+    <div class="finding-index">04</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-direcciones.jpg" alt="Ícono de menú hamburguesa en la esquina superior derecha">
+      <span class="media-caption">Pantalla · Direcciones</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Consistencia y estándares</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">Los usuarios no deberían tener que preguntarse si diferentes palabras, situaciones o acciones significan lo mismo. Lo recomendable es seguir los patrones de la industria.</p>
+      <p class="finding-analysis">
+        El ícono de menú hamburguesa (☰) en la esquina superior derecha sigue
+        la convención universal de apps móviles para acceder a opciones
+        adicionales, algo que el usuario reconoce sin necesidad de explicación.
+      </p>
+    </div>
+  </article>
+
+  <!-- 05 — Reconocimiento antes que recuerdo -->
+  <article class="finding" id="reconocimiento">
+    <div class="finding-index">05</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-lineas.jpg" alt="Sección de Recientes mostrando la última línea buscada">
+      <span class="media-caption">Pantalla · Líneas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Reconocimiento antes que recuerdo</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">El sistema debe minimizar la información que el usuario debe recordar mostrándola a través de objetos, acciones u opciones.</p>
+      <p class="finding-analysis">
+        La sección "Recientes" muestra automáticamente las líneas buscadas
+        previamente (ej. "COMBI Terminal Madero – Nordelta"), evitando que
+        el usuario tenga que recordar y volver a escribir el nombre exacto.
+      </p>
+    </div>
+  </article>
+
+  <!-- 06 — Flexibilidad y eficiencia de uso -->
+  <article class="finding finding-reverse" id="flexibilidad">
+    <div class="finding-index">06</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-direcciones.jpg" alt="Sección de Favoritos con Casa guardada y la línea 107 lista">
+      <span class="media-caption">Pantalla · Direcciones</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Flexibilidad y eficiencia de uso</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">Los atajos permiten aumentar la velocidad de interacción para el usuario experto, atrayendo tanto a principiantes como a experimentados.</p>
+      <p class="finding-analysis">
+        La sección "Favoritos" con "Casa" ya guardada le muestra directamente
+        al usuario recurrente la línea 107 y su horario de salida ("Sale en
+        2 min") sin que tenga que repetir la búsqueda, acelerando el uso para
+        quien ya usa la app habitualmente.
+      </p>
+    </div>
+  </article>
+
+  <!-- 07 — Diseño estético y minimalista (rompe, caso 1) -->
+  <article class="finding" id="estetico-1">
+    <div class="finding-index">07</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-lineas.jpg" alt="Banner publicitario de Binance ocupando gran parte del listado de líneas">
+      <span class="media-caption">Pantalla · Líneas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Diseño estético y minimalista</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">La interfaz no debe contener información que no sea relevante. Cada unidad adicional de información compite con las unidades relevantes y disminuye su visibilidad relativa.</p>
+      <p class="finding-analysis">
+        Un banner publicitario de Binance ocupa una porción muy grande del
+        espacio visible entre resultados de búsqueda, compitiendo con la
+        información funcional (líneas recientes, resultados) y reduciendo
+        su visibilidad relativa.
+      </p>
+    </div>
+  </article>
+
+  <!-- 08 — Diseño estético y minimalista (rompe, caso 2) -->
+  <article class="finding finding-reverse" id="estetico-2">
+    <div class="finding-index">08</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-paradas.jpg" alt="Banner publicitario de Pokémon Go debajo del CTA para ver todas las líneas">
+      <span class="media-caption">Pantalla · Paradas</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Diseño estético y minimalista</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">La interfaz no debe contener información que no sea relevante o se utilice raramente.</p>
+      <p class="finding-analysis">
+        El banner publicitario de Pokémon Go ocupa una porción considerable
+        de la parte inferior de la pantalla, justo debajo del CTA funcional
+        "Ver todas las líneas para esta parada", introduciendo ruido visual
+        irrelevante a la tarea del usuario (llegar a destino).
+      </p>
+    </div>
+  </article>
+
+  <!-- 09 — Prevención de errores -->
+  <article class="finding" id="prevencion-errores">
+    <div class="finding-index">09</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-busqueda-142.jpg" alt="Búsqueda flexible de '142' que devuelve resultados en vez de rechazar la consulta">
+      <span class="media-caption">Pantalla · Búsqueda "142"</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Prevención de errores</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">Es más importante prevenir la aparición de errores que generar buenos mensajes de error.</p>
+      <p class="finding-analysis">
+        Al buscar un número ambiguo como "142", el sistema no exige un
+        formato exacto (línea, altura o parada): interpreta la consulta de
+        forma flexible y devuelve resultados relevantes agrupados por
+        categoría, evitando que la búsqueda termine en un callejón sin
+        salida como ocurre con otros términos más específicos.
+      </p>
+    </div>
+  </article>
+
+  <!-- 10 — Reconocer, diagnosticar y recuperarse de errores -->
+  <article class="finding finding-reverse" id="recuperarse-errores">
+    <div class="finding-index">10</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-busqueda-762.jpg" alt="Mensaje 'No se encontraron líneas' con botón para buscar por sitio como alternativa">
+      <span class="media-caption">Pantalla · Búsqueda "762"</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Reconocer, diagnosticar y recuperarse de errores</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">Los mensajes de error deben expresarse en un lenguaje claro, indicar exactamente el problema y ser constructivos.</p>
+      <p class="finding-analysis">
+        Cuando la búsqueda de la línea "762" no arroja resultados, el sistema
+        no deja al usuario en un callejón sin salida: muestra un mensaje
+        claro ("No se encontraron líneas. Intenta buscar otra línea o buscar
+        por sitio") junto a un botón de acción directa ("Buscar por sitio")
+        que ofrece un camino concreto para recuperarse del error.
+      </p>
+    </div>
+  </article>
+
+  <!-- 11 — Ayuda y documentación -->
+  <article class="finding" id="ayuda-documentacion">
+    <div class="finding-index">11</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-menu.jpg" alt="Menú principal con la opción 'Ayuda y Soporte' claramente identificada con ícono de interrogación">
+      <span class="media-caption">Pantalla · Menú principal</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Ayuda y documentación</h2>
+        <span class="badge badge-cumple">Cumple</span>
+      </div>
+      <p class="finding-quote">La documentación tiene que ser fácil de encontrar, estar centrada en las tareas del usuario y no ser muy extensa.</p>
+      <p class="finding-analysis">
+        La opción "Ayuda y Soporte" está identificada con un ícono de
+        interrogación reconocible y ubicada en el menú principal, de fácil
+        acceso desde cualquier pantalla de la app, sin necesidad de navegar
+        varios niveles para encontrarla.
+      </p>
+    </div>
+  </article>
+
+  <!-- 12 — Consistencia y estándares (segundo caso) -->
+  <article class="finding finding-reverse" id="consistencia-2">
+    <div class="finding-index">12</div>
+    <div class="finding-media">
+      <img src="assets/pantalla-viaje.jpg" alt="Tarjeta de Uber con fondo negro y estilo visual distinto al resto de las opciones de viaje">
+      <span class="media-caption">Pantalla · Planea un viaje</span>
+    </div>
+    <div class="finding-body">
+      <div class="finding-head">
+        <h2>Consistencia y estándares</h2>
+        <span class="badge badge-rompe">Rompe</span>
+      </div>
+      <p class="finding-quote">Los usuarios no deberían tener que preguntarse si diferentes palabras, situaciones o acciones significan lo mismo.</p>
+      <p class="finding-analysis">
+        La tarjeta de la opción Uber tiene un estilo visual (fondo negro,
+        tipografía y botón "Pedir") completamente distinto al de las demás
+        opciones de viaje, que comparten un mismo lenguaje visual claro con
+        íconos de colectivo. Esto rompe la consistencia interna de la lista
+        de resultados.
+      </p>
+    </div>
+  </article>
+
+</main>
+
+<section class="pending">
+  <h3>Cobertura de heurísticas</h3>
+  <p>
+    Las 10 heurísticas de Nielsen están documentadas con evidencia real.
+  </p>
+</section>
+
+<footer class="site-footer">
+  <p>Proyecto integrador — Diseño UX/UI, Universidad de San Andrés · Producto evaluado: Moovit</p>
+</footer>
+
+</body>
+</html>
